@@ -1,0 +1,998 @@
+{
+  "version": 2,
+  "generated_by": "python3 scripts/library.py registry",
+  "model": "gemini-3.1-flash-image",
+  "style_boards": {
+    "still-life": "sources/style-boards/01-still-life-line.jpg",
+    "brush-face": "sources/style-boards/02-brush-face.jpg",
+    "figure": "sources/style-boards/03-figure-line.jpg"
+  },
+  "entities": {
+    "architect": {
+      "kind": "character",
+      "name": "the Architect",
+      "status": "approved",
+      "dir": "visual-bible/characters/architect",
+      "anchor": "visual-bible/characters/architect/front.png",
+      "plates": {
+        "front": "visual-bible/characters/architect/front.png"
+      },
+      "identity": "a woman in her forties with a long, steady face and level eyes, short solid black hair tucked neatly behind both ears, a plain open-line shirt with the sleeves rolled once. Calm, exact, sees the whole field.",
+      "required": [
+        "fine grid lines drawn across one sleeve"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "spirals",
+        "dots",
+        "a top knot",
+        "a bob",
+        "a neck band"
+      ],
+      "introduced_in": "E05",
+      "used_in": [
+        "E05"
+      ]
+    },
+    "aria": {
+      "kind": "character",
+      "name": "ARIA",
+      "status": "approved",
+      "dir": "visual-bible/characters/aria",
+      "anchor": "visual-bible/characters/aria/front.png",
+      "plates": {
+        "front": "visual-bible/characters/aria/front.png"
+      },
+      "identity": "a woman in her thirties, calm and exact, level gaze, plain open-line shirt with a standing collar.",
+      "required": [
+        "hair pulled up into one solid black knot on top of the head",
+        "a single spiral at the collar"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "loose hair"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "copywriter": {
+      "kind": "character",
+      "name": "the Copywriter",
+      "status": "approved",
+      "dir": "visual-bible/characters/copywriter",
+      "anchor": "visual-bible/characters/copywriter/front.png",
+      "plates": {
+        "front": "visual-bible/characters/copywriter/front.png"
+      },
+      "identity": "a woman in her late twenties with quick attentive eyes and solid black hair in a high ponytail, plain open-line shirt. Her writing hand is raised near her chin so the fingertips show in the portrait.",
+      "required": [
+        "ink-black fingertips on the writing hand"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "spirals",
+        "dots",
+        "a top knot",
+        "a curl over the eye",
+        "a turned-up collar",
+        "a pen"
+      ],
+      "introduced_in": "E05",
+      "used_in": [
+        "E05"
+      ]
+    },
+    "designer": {
+      "kind": "character",
+      "name": "the Designer",
+      "status": "approved",
+      "dir": "visual-bible/characters/designer",
+      "anchor": "visual-bible/characters/designer/front.png",
+      "plates": {
+        "front": "visual-bible/characters/designer/front.png"
+      },
+      "identity": "a man in his thirties with a lean, composed face and solid black hair swept straight back, plain open-line shirt. Poised, with a careful eye for balance.",
+      "required": [
+        "a shirt collar split down the middle, one half solid black and the other half open white paper"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "spirals",
+        "dots",
+        "a necktie",
+        "a side part",
+        "a beard",
+        "a coat"
+      ],
+      "introduced_in": "E05",
+      "used_in": [
+        "E05"
+      ]
+    },
+    "elder": {
+      "kind": "character",
+      "name": "the elder",
+      "status": "approved",
+      "dir": "visual-bible/characters/elder",
+      "anchor": "visual-bible/characters/elder/front.png",
+      "plates": {
+        "front": "visual-bible/characters/elder/front.png",
+        "profile": "visual-bible/characters/elder/profile.png"
+      },
+      "identity": "a man about sixty, South Asian, narrow face, clean-shaven, quiet expression.",
+      "required": [
+        "short hair with one solid black patch on the crown",
+        "round wire glasses",
+        "long open-line coat with scattered ink dots and one spiral on the lapel"
+      ],
+      "forbidden": [
+        "beard",
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest"
+      ],
+      "introduced_in": "E01",
+      "used_in": []
+    },
+    "elise": {
+      "kind": "character",
+      "name": "ÉLISE",
+      "status": "approved",
+      "dir": "visual-bible/characters/elise",
+      "anchor": "visual-bible/characters/elise/front.png",
+      "plates": {
+        "front": "visual-bible/characters/elise/front.png"
+      },
+      "identity": "a poised woman with a long neck and a narrow, composed face, simple open-line top. She stands beside the gown. She does not wear it.",
+      "required": [
+        "sleek solid black hair swept to one side over one shoulder",
+        "a line of pin-dots along one wrist"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "wearing the gown"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "evaluator": {
+      "kind": "character",
+      "name": "the Evaluator",
+      "status": "approved",
+      "dir": "visual-bible/characters/evaluator",
+      "anchor": "visual-bible/characters/evaluator/front.png",
+      "plates": {
+        "front": "visual-bible/characters/evaluator/front.png"
+      },
+      "identity": "a woman in her fifties with a narrow face and a small closed mouth, plain open-line jacket. She looks like a stranger who has just walked in. A narrow-brimmed hat sits low and tilted.",
+      "required": [
+        "one eye always in solid black shadow under the narrow hat brim, the other eye visible"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "spirals",
+        "dots",
+        "a neck band",
+        "a heavy unbroken brow",
+        "a wide brim"
+      ],
+      "introduced_in": "E05",
+      "used_in": [
+        "E05"
+      ]
+    },
+    "lead": {
+      "kind": "character",
+      "name": "the lead",
+      "status": "approved",
+      "dir": "visual-bible/characters/lead",
+      "anchor": "visual-bible/characters/lead/front.png",
+      "plates": {
+        "front": "visual-bible/characters/lead/front.png",
+        "three-quarter": "visual-bible/characters/lead/three-quarter.png",
+        "profile": "visual-bible/characters/lead/profile.png",
+        "full-body": "visual-bible/characters/lead/full-body.png",
+        "sitting": "visual-bible/characters/lead/sitting.png",
+        "expressions": "visual-bible/characters/lead/expressions.png"
+      },
+      "identity": "early thirties, South Asian, oval face, paper-colored skin. Lowered almond eyes with distinct upper lashes. Simplified hands. Quiet posture.",
+      "required": [
+        "shoulder-length black hair as one solid mass with soft waves and two or three ink curls at the jaw",
+        "one spiral earring",
+        "thin chain with a small teardrop pendant"
+      ],
+      "forbidden": [
+        "any spiral, birthmark, or tattoo on the cheek",
+        "glasses"
+      ],
+      "wardrobe": [
+        "lead-everyday",
+        "lead-coat",
+        "lead-draped",
+        "lead-stage"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01",
+        "E03",
+        "E05"
+      ]
+    },
+    "lumen": {
+      "kind": "character",
+      "name": "LUMEN",
+      "status": "approved",
+      "dir": "visual-bible/characters/lumen",
+      "anchor": "visual-bible/characters/lumen/front.png",
+      "plates": {
+        "front": "visual-bible/characters/lumen/front.png"
+      },
+      "identity": "a young woman with a soft round face and attentive eyes, simple open-line blouse.",
+      "required": [
+        "blunt solid black chin-length bob",
+        "exactly three ink dots in a row on one sleeve"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "jaw curls"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "man-cowlick": {
+      "kind": "character",
+      "name": "a young man",
+      "status": "approved",
+      "dir": "visual-bible/characters/man-cowlick",
+      "anchor": "visual-bible/characters/man-cowlick/front.png",
+      "plates": {
+        "front": "visual-bible/characters/man-cowlick/front.png"
+      },
+      "identity": "a young man about twenty, narrow face, alert eyes. A plain crew-neck shirt. No story name; an episode may assign him a role.",
+      "required": [
+        "very short solid black hair with one single tuft standing up from the front hairline",
+        "a plain crew-neck shirt",
+        "an empty neck with no jewelry and no marks on the shirt"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "beard",
+        "a side part",
+        "a necktie",
+        "a turned-up collar",
+        "a neck band",
+        "any earring",
+        "dots or a spiral on the shirt",
+        "a mohawk"
+      ],
+      "introduced_in": "pool",
+      "used_in": [
+        "E05"
+      ]
+    },
+    "man-tie": {
+      "kind": "character",
+      "name": "a man in his forties",
+      "status": "approved",
+      "dir": "visual-bible/characters/man-tie",
+      "anchor": "visual-bible/characters/man-tie/front.png",
+      "plates": {
+        "front": "visual-bible/characters/man-tie/front.png"
+      },
+      "identity": "a man in his forties, broad face, level gaze, quiet posture. Plain open-line shirt. No story name; an episode may assign him a role.",
+      "required": [
+        "solid black hair combed flat with a clean side part",
+        "a narrow open-line necktie",
+        "one small spiral at the knot of the tie"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "beard",
+        "coat",
+        "a black patch on the crown"
+      ],
+      "introduced_in": "pool",
+      "used_in": []
+    },
+    "sage": {
+      "kind": "character",
+      "name": "SAGE",
+      "status": "approved",
+      "dir": "visual-bible/characters/sage",
+      "anchor": "visual-bible/characters/sage/front.png",
+      "plates": {
+        "front": "visual-bible/characters/sage/front.png"
+      },
+      "identity": "a serene woman, open-line wrap across the chest, palms open when hands are shown. Stillness is the mark.",
+      "required": [
+        "eyes closed",
+        "hair parted in the center and pulled back low",
+        "no ornament anywhere"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "spirals",
+        "dots"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "scout": {
+      "kind": "character",
+      "name": "SCOUT",
+      "status": "approved",
+      "dir": "visual-bible/characters/scout",
+      "anchor": "visual-bible/characters/scout/front.png",
+      "plates": {
+        "front": "visual-bible/characters/scout/front.png"
+      },
+      "identity": "a woman in her late twenties with a quick, alert posture and short cropped black hair.",
+      "required": [
+        "one ink curl falling over one eye",
+        "a short collar turned up, not a coat"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "long hair"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "vera": {
+      "kind": "character",
+      "name": "VERA",
+      "status": "approved",
+      "dir": "visual-bible/characters/vera",
+      "anchor": "visual-bible/characters/vera/front.png",
+      "plates": {
+        "front": "visual-bible/characters/vera/front.png"
+      },
+      "identity": "a woman with a square jaw and a judge's stillness, open-line shirt with a pointed collar. Usually framed in profile.",
+      "required": [
+        "hair cut close as a solid black cap",
+        "one heavy unbroken brow",
+        "a solid black neck band"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "curls",
+        "spirals"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "woman-braid": {
+      "kind": "character",
+      "name": "a young woman",
+      "status": "approved",
+      "dir": "visual-bible/characters/woman-braid",
+      "anchor": "visual-bible/characters/woman-braid/front.png",
+      "plates": {
+        "front": "visual-bible/characters/woman-braid/front.png"
+      },
+      "identity": "a young woman about twenty, long face, quiet eyes. A plain round-neck top. She is not the lead. No story name; an episode may assign her a role.",
+      "required": [
+        "one thick solid black braid resting over the shoulder on the left side of the picture",
+        "two small ink loops at the end of the braid",
+        "a round neckline with no collar"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "jaw curls",
+        "loose shoulder-length hair",
+        "a bob",
+        "a top knot",
+        "a shawl"
+      ],
+      "introduced_in": "pool",
+      "used_in": []
+    },
+    "woman-shawl": {
+      "kind": "character",
+      "name": "a woman in her fifties",
+      "status": "approved",
+      "dir": "visual-bible/characters/woman-shawl",
+      "anchor": "visual-bible/characters/woman-shawl/front.png",
+      "plates": {
+        "front": "visual-bible/characters/woman-shawl/front.png"
+      },
+      "identity": "a woman in her fifties, round face, soft lowered gaze. No story name; an episode may assign her a role.",
+      "required": [
+        "hair gathered into a low bun at the nape",
+        "an open-line shawl over both shoulders",
+        "three ink dots in a row along one edge of the shawl"
+      ],
+      "forbidden": [
+        "the lead's spiral earring",
+        "teardrop pendant",
+        "black vest",
+        "glasses",
+        "a top knot",
+        "eyes closed",
+        "a braid"
+      ],
+      "introduced_in": "pool",
+      "used_in": []
+    },
+    "lead-coat": {
+      "kind": "wardrobe",
+      "name": "the lead's long coat",
+      "status": "approved",
+      "dir": "visual-bible/wardrobe/lead-coat",
+      "anchor": "visual-bible/wardrobe/lead-coat/look.png",
+      "plates": {
+        "look": "visual-bible/wardrobe/lead-coat/look.png"
+      },
+      "identity": "worn over the everyday clothes for exteriors and travel.",
+      "required": [
+        "long coat mostly in open line",
+        "solid black collar",
+        "one solid black pocket"
+      ],
+      "forbidden": [
+        "belt",
+        "hat",
+        "patterned fabric"
+      ],
+      "wearer": "lead",
+      "introduced_in": "E01",
+      "used_in": []
+    },
+    "lead-draped": {
+      "kind": "wardrobe",
+      "name": "the lead's head drape",
+      "status": "approved",
+      "dir": "visual-bible/wardrobe/lead-draped",
+      "anchor": "visual-bible/wardrobe/lead-draped/look.png",
+      "plates": {
+        "look": "visual-bible/wardrobe/lead-draped/look.png"
+      },
+      "identity": "an optional drape of cloth, not her default look.",
+      "required": [
+        "cloth over the head and one shoulder in open line",
+        "one solid black edge on the drape"
+      ],
+      "forbidden": [
+        "stacked necklaces",
+        "armbands",
+        "dance pose"
+      ],
+      "wearer": "lead",
+      "introduced_in": "E01",
+      "used_in": []
+    },
+    "lead-everyday": {
+      "kind": "wardrobe",
+      "name": "the lead's everyday clothes",
+      "status": "approved",
+      "dir": "visual-bible/wardrobe/lead-everyday",
+      "anchor": "visual-bible/wardrobe/lead-everyday/look.png",
+      "plates": {
+        "look": "visual-bible/wardrobe/lead-everyday/look.png"
+      },
+      "identity": "her default wardrobe while she is working or at home.",
+      "required": [
+        "collarless open-line shirt",
+        "short solid-black vest",
+        "straight open-line trousers",
+        "simple dark shoes"
+      ],
+      "forbidden": [
+        "coat",
+        "scarf",
+        "gown"
+      ],
+      "wearer": "lead",
+      "introduced_in": "E01",
+      "used_in": [
+        "E01",
+        "E05"
+      ]
+    },
+    "lead-stage": {
+      "kind": "wardrobe",
+      "name": "the lead's stage gown",
+      "status": "approved",
+      "dir": "visual-bible/wardrobe/lead-stage",
+      "anchor": "visual-bible/wardrobe/lead-stage/look.png",
+      "plates": {
+        "look": "visual-bible/wardrobe/lead-stage/look.png"
+      },
+      "identity": "the floor-length gown she wears on stage. The same garment as the gown prop.",
+      "required": [
+        "floor-length long-sleeved gown in open line with a round neck",
+        "one solid black panel running from shoulder to hem",
+        "a small spiral and dots at the hem"
+      ],
+      "forbidden": [
+        "sash",
+        "tiara",
+        "crown",
+        "lettering",
+        "color"
+      ],
+      "wearer": "lead",
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "apartment": {
+      "kind": "location",
+      "name": "the apartment",
+      "status": "approved",
+      "dir": "visual-bible/locations/apartment",
+      "anchor": "visual-bible/locations/apartment/establishing.png",
+      "plates": {
+        "establishing": "visual-bible/locations/apartment/establishing.png"
+      },
+      "identity": "her sparse apartment interior. Most of the picture is empty paper.",
+      "required": [
+        "one tall window on the left wall",
+        "small table with one chair",
+        "bare floor line",
+        "a large solid black shadow in one corner"
+      ],
+      "forbidden": [
+        "wall patterns",
+        "shelves full of objects",
+        "people in the establishing plate"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01",
+        "E03",
+        "E05"
+      ]
+    },
+    "cafe": {
+      "kind": "location",
+      "name": "the café",
+      "status": "approved",
+      "dir": "visual-bible/locations/cafe",
+      "anchor": "visual-bible/locations/cafe/establishing.png",
+      "plates": {
+        "establishing": "visual-bible/locations/cafe/establishing.png"
+      },
+      "identity": "a quiet café corner.",
+      "required": [
+        "round pedestal table",
+        "two simple chairs",
+        "one cup",
+        "a window above",
+        "a solid black shadow pooled under the table"
+      ],
+      "forbidden": [
+        "menu",
+        "lettering",
+        "crowds",
+        "torn paper edge or border"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "factory": {
+      "kind": "location",
+      "name": "the factory",
+      "status": "approved",
+      "dir": "visual-bible/locations/factory",
+      "anchor": "visual-bible/locations/factory/establishing.png",
+      "plates": {
+        "establishing": "visual-bible/locations/factory/establishing.png"
+      },
+      "identity": "a sparse factory interior in daylight. The overhead shaft is still in place. No people.",
+      "required": [
+        "one giant motor as a solid black mass",
+        "one long overhead shaft",
+        "a few belts dropping from the shaft to the floor"
+      ],
+      "forbidden": [
+        "people",
+        "signs",
+        "lettering",
+        "crowds",
+        "a small motor on every machine"
+      ],
+      "introduced_in": "parts",
+      "used_in": []
+    },
+    "night-street": {
+      "kind": "location",
+      "name": "the night street",
+      "status": "approved",
+      "dir": "visual-bible/locations/night-street",
+      "anchor": "visual-bible/locations/night-street/establishing.png",
+      "plates": {
+        "establishing": "visual-bible/locations/night-street/establishing.png"
+      },
+      "identity": "the city street at night. The same street logic as the day street.",
+      "required": [
+        "sky as a large solid black field",
+        "one streetlamp with a cone and pool of paper-white light",
+        "building edges in thin line",
+        "dark windows"
+      ],
+      "forbidden": [
+        "signs",
+        "lettering",
+        "cars",
+        "gray sky"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01",
+        "E03"
+      ]
+    },
+    "street": {
+      "kind": "location",
+      "name": "the day street",
+      "status": "approved",
+      "dir": "visual-bible/locations/street",
+      "anchor": "visual-bible/locations/street/establishing.png",
+      "plates": {
+        "establishing": "visual-bible/locations/street/establishing.png"
+      },
+      "identity": "an empty city street in daylight drawn with very few lines.",
+      "required": [
+        "two building edges",
+        "one curved streetlamp",
+        "one solid black doorway",
+        "a large field of paper sky"
+      ],
+      "forbidden": [
+        "cars",
+        "signs",
+        "lettering",
+        "crowds"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E03"
+      ]
+    },
+    "train-platform": {
+      "kind": "location",
+      "name": "the train platform",
+      "status": "approved",
+      "dir": "visual-bible/locations/train-platform",
+      "anchor": "visual-bible/locations/train-platform/establishing.png",
+      "plates": {
+        "establishing": "visual-bible/locations/train-platform/establishing.png"
+      },
+      "identity": "an empty train platform under a vast paper sky.",
+      "required": [
+        "one slatted bench",
+        "two tall columns, one partly solid black",
+        "a thin overhead line",
+        "platform edge lines"
+      ],
+      "forbidden": [
+        "train",
+        "signs",
+        "lettering",
+        "crowds"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E03"
+      ]
+    },
+    "agent": {
+      "kind": "prop",
+      "name": "the agent",
+      "status": "approved",
+      "dir": "visual-bible/props/agent",
+      "anchor": "visual-bible/props/agent/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/agent/insert.png"
+      },
+      "identity": "the agent, drawn as one small toolbox with fancy levers and dials arranged around it. No person.",
+      "required": [
+        "a rectangular toolbox in open line",
+        "three levers and four round dials arranged around the box, each dial a blank circle with one needle",
+        "one spiral centered on the front of the box"
+      ],
+      "forbidden": [
+        "numbers",
+        "tick marks",
+        "text",
+        "labels",
+        "copper",
+        "hands",
+        "a face",
+        "a chat window"
+      ],
+      "introduced_in": "parts",
+      "used_in": []
+    },
+    "gown": {
+      "kind": "prop",
+      "name": "the gown",
+      "status": "approved",
+      "dir": "visual-bible/props/gown",
+      "anchor": "visual-bible/props/gown/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/gown/insert.png"
+      },
+      "identity": "the stage gown hanging on a hook, with no body inside it. The same garment as the lead's stage wardrobe.",
+      "required": [
+        "hanger and hook",
+        "floor-length long-sleeved gown in open line",
+        "one solid black panel from shoulder to hem",
+        "small spiral and dots at the hem"
+      ],
+      "forbidden": [
+        "a person wearing it",
+        "mannequin",
+        "color"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "iron": {
+      "kind": "prop",
+      "name": "the clothes iron",
+      "status": "approved",
+      "dir": "visual-bible/props/iron",
+      "anchor": "visual-bible/props/iron/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/iron/insert.png"
+      },
+      "identity": "one clothes iron, seen from the side, alone on empty paper.",
+      "required": [
+        "a pointed sole drawn as one solid black shape",
+        "a handle in open line above the body"
+      ],
+      "forbidden": [
+        "a cord",
+        "a light socket",
+        "text",
+        "a brand",
+        "steam holes as a pattern"
+      ],
+      "introduced_in": "parts",
+      "used_in": []
+    },
+    "letter": {
+      "kind": "prop",
+      "name": "the letter",
+      "status": "approved",
+      "dir": "visual-bible/props/letter",
+      "anchor": "visual-bible/props/letter/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/letter/insert.png"
+      },
+      "identity": "an opened letter and its envelope.",
+      "required": [
+        "blank letter sheet",
+        "open envelope",
+        "a solid black seal with a spiral and three dots"
+      ],
+      "forbidden": [
+        "writing",
+        "addresses",
+        "stamps with text"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "light-socket": {
+      "kind": "prop",
+      "name": "the light socket",
+      "status": "approved",
+      "dir": "visual-bible/props/light-socket",
+      "anchor": "visual-bible/props/light-socket/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/light-socket/insert.png"
+      },
+      "identity": "an old ceiling light socket with a short cord dropping from it. The bulb may sit in the socket. No iron.",
+      "required": [
+        "a round ceiling socket",
+        "a short cord hanging from the socket",
+        "empty paper around the object"
+      ],
+      "forbidden": [
+        "a wall outlet",
+        "two vertical slots",
+        "text",
+        "a brand",
+        "the clothes iron"
+      ],
+      "introduced_in": "parts",
+      "used_in": []
+    },
+    "necklace": {
+      "kind": "prop",
+      "name": "the necklace",
+      "status": "approved",
+      "dir": "visual-bible/props/necklace",
+      "anchor": "visual-bible/props/necklace/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/necklace/insert.png"
+      },
+      "identity": "the lead's necklace off the body. The same piece she always wears.",
+      "required": [
+        "thin chain laid in a loose oval",
+        "small teardrop pendant partly solid black with a spiral engraved"
+      ],
+      "forbidden": [
+        "gemstones",
+        "a second pendant",
+        "color"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01"
+      ]
+    },
+    "outlet": {
+      "kind": "prop",
+      "name": "the wall outlet",
+      "status": "approved",
+      "dir": "visual-bible/props/outlet",
+      "anchor": "visual-bible/props/outlet/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/outlet/insert.png"
+      },
+      "identity": "one plain wall outlet, the standard socket, alone on empty paper.",
+      "required": [
+        "a small vertical rectangular plate",
+        "two vertical slots side by side"
+      ],
+      "forbidden": [
+        "a ceiling socket",
+        "a hanging cord",
+        "a light bulb",
+        "text",
+        "a brand",
+        "screws",
+        "a third hole"
+      ],
+      "introduced_in": "parts",
+      "used_in": []
+    },
+    "phone": {
+      "kind": "prop",
+      "name": "the phone",
+      "status": "approved",
+      "dir": "visual-bible/props/phone",
+      "anchor": "visual-bible/props/phone/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/phone/insert.png"
+      },
+      "identity": "one simple mobile phone.",
+      "required": [
+        "rounded rectangle body",
+        "solid black screen",
+        "small spirals and dots in the bezel corners"
+      ],
+      "forbidden": [
+        "icons",
+        "text",
+        "brand",
+        "lit screen content"
+      ],
+      "introduced_in": "E01",
+      "used_in": [
+        "E01",
+        "E03"
+      ]
+    },
+    "photograph": {
+      "kind": "prop",
+      "name": "the photograph",
+      "status": "approved",
+      "dir": "visual-bible/props/photograph",
+      "anchor": "visual-bible/props/photograph/insert.png",
+      "plates": {
+        "insert": "visual-bible/props/photograph/insert.png"
+      },
+      "identity": "a single loose photographic print, slightly curled.",
+      "required": [
+        "thin border",
+        "two simplified people inside",
+        "one figure cropped by the edge of the print"
+      ],
+      "forbidden": [
+        "text on the photo",
+        "frame",
+        "color"
+      ],
+      "introduced_in": "E01",
+      "used_in": []
+    },
+    "style": {
+      "kind": "style",
+      "name": "style plates",
+      "status": "approved",
+      "dir": "visual-bible/style",
+      "anchor": "visual-bible/style/brush-portrait.png",
+      "plates": {
+        "brush-portrait": "visual-bible/style/brush-portrait.png",
+        "still-life": "visual-bible/style/still-life.png",
+        "silhouette": "visual-bible/style/silhouette.png",
+        "ornament": "visual-bible/style/ornament.png",
+        "closeup": "visual-bible/style/closeup.png",
+        "negative-space": "visual-bible/style/negative-space.png"
+      },
+      "identity": "style anchors only. They show how the ink behaves, not who anyone is.",
+      "required": [
+        "black ink on warm off-white paper",
+        "open contour with selective solid black"
+      ],
+      "forbidden": [
+        "color",
+        "gray wash",
+        "text"
+      ],
+      "plate_notes": {
+        "brush-portrait": "brush mode, solid black features, empty paper",
+        "still-life": "contour mode, sparse hatching, one ornament cluster",
+        "silhouette": "walking silhouette with a white interior line",
+        "ornament": "spiral, curl, and dot vocabulary",
+        "closeup": "extreme close-up, lashes, hand at the cheek; not the lead",
+        "negative-space": "small figure, one black mass, vast paper"
+      },
+      "introduced_in": "E01",
+      "used_in": []
+    }
+  }
+}
