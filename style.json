@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "name": "dse-visual-bible",
+  "description": "Black ink on warm off-white paper. Open contour, selective solid black, almost no ornament.",
+  "paper": {
+    "rgb": [
+      238,
+      231,
+      219
+    ],
+    "label": "warm cream"
+  },
+  "ink": {
+    "label": "black",
+    "color": [
+      0,
+      0,
+      0
+    ]
+  },
+  "drawing_modes": [
+    "brush",
+    "contour",
+    "silhouette"
+  ],
+  "allowed_modes": [
+    "figure",
+    "brush-face",
+    "still-life"
+  ],
+  "mode_boards": {
+    "still-life": "sources/style-boards/01-still-life-line.jpg",
+    "brush-face": "sources/style-boards/02-brush-face.jpg",
+    "figure": "sources/style-boards/03-figure-line.jpg"
+  },
+  "kind_boards": {
+    "character": [
+      "figure",
+      "brush-face"
+    ],
+    "wardrobe": [
+      "figure"
+    ],
+    "location": [
+      "still-life",
+      "brush-face"
+    ],
+    "prop": [
+      "still-life"
+    ]
+  },
+  "aspect_defaults": {
+    "stills": "9:16",
+    "plates": "1:1",
+    "clips": "9:16",
+    "clip_width": 720,
+    "clip_height": 1280,
+    "clip_duration_sec": 5,
+    "clip_fps": 24
+  },
+  "forbidden": [
+    "color",
+    "text",
+    "letters",
+    "logos",
+    "gray wash",
+    "gradients",
+    "halftone",
+    "frame",
+    "border",
+    "signature",
+    "caption",
+    "photorealism",
+    "watermark"
+  ],
+  "prompt_preamble": "Black ink on warm off-white paper. Hairline contours and heavy brush strokes may share the picture. Large flat black only for hair, deepest shadow, pupils, and graphic accents. Everything else stays the paper color. No gray wash, gradient, halftone, or color. Sparse hatching only. A spiral, curl, or dot only when the subject requires that exact mark. No stray spirals. Generous empty paper. No text, border, frame, or signature. Do not copy the sunflower vase, the reclining brush face, or the jeweled dancer. Cortex (the Evaluator) and any AI agent character added from now on wear solid black ink clothing (and hat, if any) so they stand out from the humans. The existing cast, including ARIA, VERA, LUMEN, SCOUT, ÉLISE, the architect, the copywriter, the designer, and the sage, keep their current wardrobe.",
+  "prompts": {
+    "script_opening": "You write one episode of a narrated black-ink microdrama.",
+    "script_picture_rules": "Picture rules: black ink on warm paper, no color, no gray wash, no text, no letters, no logos. Empty paper is the light. One black mass is enough shadow.",
+    "script_style_lock": "Black ink line art on warm cream paper, matching the source image. Faces, clothing, and composition stay consistent throughout.",
+    "plate_style_lock": "STYLE LOCK. The attached images are style references only. Match their drawing language. Do not copy their subjects, poses, costumes, or compositions. Do not draw sunflowers, the reclining brush face, or the jeweled dancer.\n\nMedium: an original hand-drawn black ink illustration on warm off-white paper. No frame, no border, no signature, no caption, no text of any kind, no color.\n\nLine: alive ink. Hairline contours and heavy brush strokes can exist in the same picture. Lines are slightly imperfect.\n\nBlack: large flat areas of solid black for hair, deepest shadow, pupils, and graphic accents. The rest of the image stays the paper color. No gray paint, no gradients, no halftone dots. Hatching is sparse and only where a form needs shadow.\n\nOrnament: almost none. Do not add spirals, curls, or dots in the empty paper or around an object. Draw one only when the subject text says that exact mark is required, and draw only that one. Do not copy spirals from the reference images.\n\nFaces: simplified. Almond or lowered eyes with clear lashes, a nose of one or two lines, a small mouth.\n\nSpace: generous empty paper. Sparse background. Strong silhouette. Graphic clarity suitable for limited animation.\n\nForbidden: photorealism, color, gray washes, 3D rendering, anime, clean vector art, watercolor, pencil-only sketch, comic-book screentone, watermarks, letters, numbers, labels, stray spirals, stray curls, decorative dots.",
+    "plate_check_message": "Plates are black ink on warm paper, with no text and no color. Rewrite the identity and the required marks.",
+    "clips_style_lock": "Black ink line art on warm cream paper, matching the source image exactly, identity and style unchanged. Paper colour stays the same warm cream as the source, RGB ({paper_rgb}).",
+    "style_anchor_note": "The image above is a style anchor only: a different {kind}. Match its ink, line weight, and use of empty paper. Do not copy its subject, and do not copy its spirals, curls, or dots."
+  },
+  "character_rules": [
+    "Cortex (the Evaluator) and any AI agent character added from now on wear solid black ink clothing (and hat, if any) so they stand out from the humans. The existing cast, including ARIA, VERA, LUMEN, SCOUT, ÉLISE, the architect, the copywriter, the designer, and the sage, keep their current wardrobe."
+  ]
+}

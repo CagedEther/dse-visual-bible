@@ -183,9 +183,10 @@
       "plates": {
         "front": "visual-bible/characters/evaluator/front.png"
       },
-      "identity": "a woman in her fifties with a narrow face and a small closed mouth, plain open-line jacket. She looks like a stranger who has just walked in. A narrow-brimmed hat sits low and tilted.",
+      "identity": "a woman in her fifties with a narrow face and a small closed mouth, wearing a jacket filled in solid black ink. She looks like a stranger who has just walked in. A narrow-brimmed hat, also solid black ink, sits low and tilted.",
       "required": [
-        "one eye always in solid black shadow under the narrow hat brim, the other eye visible"
+        "one eye always in solid black shadow under the narrow hat brim, the other eye visible",
+        "jacket and narrow-brimmed hat filled in solid black ink, because she is an AI agent"
       ],
       "forbidden": [
         "the lead's spiral earring",

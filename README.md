@@ -9,6 +9,8 @@ It was built for the *Agentic Business Schooled* animated shorts and is shared a
 - `visual-bible.md` — the global rules: palette, line, modes, cinematography, motion, prompt language, and what is prohibited.
 - `style/` — the style plates every generation is anchored to.
 - `characters/`, `wardrobe/`, `locations/`, `props/` — one folder per entity, each with a `spec.md` (identity, required marks, forbidden marks) and its approved reference plates.
+- `style.json` — the style contract the local episode tools read: paper colour, allowed modes, style-board paths, and the prompt seams. The active bible is selected in `/workspace/local-agents/pipeline.json`.
+- Design rule: Cortex (the Evaluator) and any AI agent character added from now on wear solid black ink clothing (and hat, if any) so they stand out from the humans. The existing cast, including ARIA, VERA, LUMEN, SCOUT, ÉLISE, the architect, the copywriter, the designer, and the sage, keep their current wardrobe. This is recorded in `style.json` under `character_rules` and in the prompt preamble.
 - `registry.json` — a generated index of every entity and plate. The stills agent reads this.
 - `marks.md` — a generated table of which character owns which identity mark, so new characters stay distinct.
 - `index.html` — open in a browser to browse every plate.
